@@ -7,9 +7,9 @@
 5) Напишите *docker run --gpus all -p 8000:8000 flower_similars*
 6) Перейдите по [ссылке](http://localhost:8000/docs) 
 7) Нажмите на **Try it out**
-8) В поле **Request body** в **image_path** вставьте data/dandelion/8181477_8cb77d2e0f_n.jpg, 
+8) В поле **Request body** в **image_path** вставьте data/tulip/21046610012_8942d32007_n.jpg, 
 чтобы получилось 
-- "image_path": "data/dandelion/8181477_8cb77d2e0f_n.jpg"
+- "image_path": "data/tulip/21046610012_8942d32007_n.jpg"
 9) Нажмите **Execute**
 10) В поле **Response body** должен отобразиться JSON.
 
