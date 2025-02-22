@@ -1,0 +1,2 @@
+*.pt filter=lfs diff=lfs merge=lfs -text
+./models/vgg_flower_trained.pt filter=lfs diff=lfs merge=lfs -text
