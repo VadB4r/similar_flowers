@@ -8,7 +8,7 @@ class Embedder:
     def __init__(self, path_to_weights="./models/vgg_flower_trained.pt"):
 
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        self.model = torch.load(path_to_weights).to(self.device)
+        self.model = torch.load(path_to_weights, map_location=torch.device('cpu')).to(self.device)
         self.model.classifier = self.model.classifier[:-1]
         self.transform = Compose(
             [
