@@ -1,5 +1,3 @@
-import random
-
 from docarray import BaseDoc
 from docarray.typing import NdArray
 from docarray import DocList

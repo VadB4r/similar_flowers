@@ -3,7 +3,7 @@ from embedder import Embedder
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Dict, List
-import numpy as np
+
 
 app = FastAPI()
 db = VectorDB()
@@ -13,7 +13,6 @@ embedder = Embedder()
 
 class ImageRequest(BaseModel):
     image_path: str
-
 
 
 @app.post("/get_similars")
